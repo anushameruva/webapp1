@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          input[type=text], select, textarea {
+            width: 40%;
+            padding: 12px;
+            border: 1px solid black;
+            border-radius: 4px;
+            resize: vertical;
+          }
+          
+          label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+          }
+          
+          input[type=submit] {
+            width:30%;
+            padding: 12px 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+            
+          }
+          
+          input[type=submit]:hover {
+            background-color: #4586a0;
+          }
+          
+          .container {
+           	 
+
+         padding:20px;
+            width: 40%;
+            margin-left: auto;
+          margin-right: auto;
+          }
+          
+          .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+          }
+          
+          .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+          }
+          
+          .col-29 {
+            float: left;
+            width: 29%;
+            margin-top: 6px;
+          }
+          .col-71 {
+            float: left;
+            width: 71%;
+            margin-top: 6px;
+          }
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="POST">
+            
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Schema Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Table Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="table">
+            </div>
+          </div>
+         <div class="row">
+            <div class="col-25">
+              <label for="lname">No Of Column</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-29"></div>
+          <div class="col-71">
+          <input type="submit" value="Add cols">
+        </div>
+      </div>
+          <div class="row">
+              <div class="col-29"></div>
+            <div class="col-71">
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+        </form>
+      </div>
+</body>
+</html>
+
